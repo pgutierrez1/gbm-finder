@@ -1,0 +1,27 @@
+.sidebar {
+    width: 20%;
+    height: auto;
+    background: lightgrey;
+}
+
+.sidebar-header {
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 1.8em;
+    
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.button {
+    margin: 1vh 4vw;
+    padding: 2vh;
+
+    background: grey;
+    color: white;
+    border-radius: 5px;
+    
+    font-family: Inter;
+    font-weight: 700;
+    text-align: center;
+}

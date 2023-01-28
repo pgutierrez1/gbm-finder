@@ -1,7 +1,12 @@
 .post-row {
     display: flex;
     flex-direction: row;
-    /* justify-content: start; */
     width: 100%;
     overflow: visible;
+}
+.header {
+    margin: 5vh 1vw 0;
+
+    font-family: Paytone One;
+    font-size: 1.8em;
 }
