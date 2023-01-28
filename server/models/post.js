@@ -9,6 +9,18 @@ module.exports = (sequelize, DataTypes) => {
         desc: {
             type: DataTypes.TEXT,
         },
+        org: {
+            type: DataTypes.STRING,
+        },
+        location: {
+            type: DataTypes.TEXT
+        },
+        interest: {
+            type: DataTypes.INTEGER,
+        },
+        image: {
+            type: DataTypes.BLOB,
+        }
     },
     {
       timestamps: false,
