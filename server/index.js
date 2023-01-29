@@ -42,9 +42,13 @@ app.post("/api/createpost", (req, res) => {
     Post.create({
         title: req.body.title,
         desc: req.body.desc,
-        date: req.body.date,
+        org: req.body.org,
+        datetime: req.body.datetime,
+        location: req.body.location,
+        image: req.body.image,
+        interest: 0
     });
-})
+}),,
 
 app.listen(config.port, () => {
     console.log(`Server started on port ${config.port}`);

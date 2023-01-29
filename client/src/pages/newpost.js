@@ -22,7 +22,10 @@ const NewPost = (props) => {
         Axios.post(post_url,{
             title: newPost.title,
             desc: newPost.desc,
-            date: newPost.date
+            org: newPost.org,
+            datetime: newPost.datetime,
+            location: newPost.location,
+            image: newPost.image,
 
         })
             .then(res=>{
@@ -38,11 +41,20 @@ const NewPost = (props) => {
                 <label>Event name
                     <input onChange={(e)=>handle(e)} id="title" value={newPost.name} type="text" />
                 </label> <br />
+                <label>Organization
+                    <input onChange={(e)=>handle(e)} id="org" value={newPost.org} type="text" />
+                </label> <br />
                 <label>Description
                     <input onChange={(e)=>handle(e)} id="desc" value={newPost.desc} type="textarea" />
                 </label> <br />
-                <label>Date
-                    <input onChange={(e)=>handle(e)} id="date" value={newPost.date} type="date" />
+                <label>Date & Time
+                    <input onChange={(e)=>handle(e)} id="datetime" value={newPost.datetime} type="datetime-local" />
+                </label> <br />
+                <label>Location
+                    <input onChange={(e)=>handle(e)} id="location" value={newPost.location} type="text" />
+                </label> <br />
+                <label>Image
+                    <input onChange={(e)=>handle(e)} id="image" value={newPost.image} type="file" />
                 </label> <br />
                 <button>Submit</button>
             </form>

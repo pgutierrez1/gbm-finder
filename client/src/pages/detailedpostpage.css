@@ -1,8 +1,8 @@
 p {
 
 }
-.detailedpostcontainer {
+.detailedPostContainer {
     width: 60%;
     height: 80%;
-    color: grey;
+    background: lightgrey;
 }

@@ -9,8 +9,8 @@ const Home = (props) => {
     return (
         <div className="homeContainer">
             <div className="mainView">
-                <PostRow rowdata={rows[0]} postdata={posts} />
-                <PostRow rowdata={rows[1]} postdata={posts} />
+                <PostRow rowdata={rows[0]} postdata={posts} getDetailedPostPage={props.getDetailedPostPage} />
+                <PostRow rowdata={rows[1]} postdata={posts} getDetailedPostPage={props.getDetailedPostPage} />
             </div>
             <Sidebar />
         </div>

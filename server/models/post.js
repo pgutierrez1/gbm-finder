@@ -9,11 +9,11 @@ module.exports = (sequelize, DataTypes) => {
         desc: {
             type: DataTypes.TEXT,
         },
-        date: {
-            type: DataTypes.TEXT,
-        },
         org: {
             type: DataTypes.STRING,
+        },
+        datetime: {
+            type: DataTypes.TEXT,
         },
         location: {
             type: DataTypes.TEXT

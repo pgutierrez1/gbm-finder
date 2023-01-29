@@ -7,7 +7,7 @@ const PostRow = (props) => {
 
     const postItemsJSX = postdata.map((item, index) => {
         return(
-            <Post item={item} key={item.id} />
+            <Post item={item} key={item.id} getDetailedPostPage={props.getDetailedPostPage} />
         )
     })
     return (

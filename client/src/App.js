@@ -5,6 +5,7 @@ import Axios from "axios";
 // pages
 import Home from './pages/home';
 import NewPost from './pages/newpost';
+import DetailedPostPage from './pages/detailedpostpage'
 import './App.css';
 
 function App() {
@@ -18,6 +19,14 @@ function App() {
           });
     },[]);
 
+    const [detailedPostInfo, setDetailedPostInfo] = useState({})
+    const getDetailedPostPage = async (e, item) => {
+        const detailedPostInfo = { ...item};
+        await setDetailedPostInfo(detailedPostInfo);
+        console.log(detailedPostInfo);
+
+    }
+
     const rows = [
         { name: "Today" },
         { name: "This week" },
@@ -28,9 +37,10 @@ function App() {
         <Routes>
             <Route 
                 index path="/" 
-                element={<Home rows={rows} posts={posts}/>} 
+                element={<Home rows={rows} posts={posts} getDetailedPostPage={getDetailedPostPage.bind()}/>} 
             />
             <Route path="/new" element={<NewPost />}/>
+            <Route path="/post" element={<DetailedPostPage item={detailedPostInfo}/>} />
         </Routes>
     </BrowserRouter>
   );

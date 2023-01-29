@@ -1,8 +1,11 @@
 .post-row {
     display: flex;
     flex-direction: row;
+
     width: 100%;
-    overflow: visible;
+
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 .header {
     margin: 5vh 1vw 0;
