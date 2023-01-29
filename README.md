@@ -8,3 +8,5 @@ Clone the repo: `git clone https://github.com/pgutierrez1/gbm-finder`
 Install the dependencies in both the `client` and `server` folders: `npm install`
 
 Run `node dbInit.js` in `server` to seed the database.
+
+A tutorial was referenced in the creation of this project: https://www.youtube.com/watch?v=eM8n55lad1c&t=385s . 
