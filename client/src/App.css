@@ -1,11 +1,17 @@
 p {
     font-family: Inter;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
 }
 .primary {
     color: lightblue; 
 }
 .font-xl {
     font-size: 70px;
+}
+html {
+    font-size: 20px;
 }
 .App {
     display: flex;
