@@ -27,6 +27,7 @@ span {
     padding: 1vw;
 
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .info-container {

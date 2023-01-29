@@ -17,6 +17,8 @@ label {
 .form-title {
     align-text: center;
     color: white;
+    font-size: 1.8em;
+    font-weight: 700;
 }
 .form-button{
     margin: 1vh 4vw;

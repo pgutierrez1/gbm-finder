@@ -7,7 +7,7 @@ const NewPost = (props) => {
     const [newPost, setNewPost] = useState({
         title: "",
         desc: "",
-        date: "",
+        datetime: "",
 
     })
     const handle = (e) =>{

@@ -1,8 +1,27 @@
-p {
-
-}
 .detailedPostContainer {
+    display: flex;
+    flex-direction: column;
+
     width: 60%;
     height: 80%;
+    margin: auto;
+    margin-top: 10vh;
+
     background: lightgrey;
+}
+.detailed-header {
+    margin: auto;
+    margin-top: 2vh;
+
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.detailed-image {
+    scale: 70%;
+}
+.detailed-text {
+    margin-left: 2vw;
+}
+.detailed-bold {
+    font-weight: 700;
 }

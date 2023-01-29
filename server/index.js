@@ -48,7 +48,7 @@ app.post("/api/createpost", (req, res) => {
         image: req.body.image,
         interest: 0
     });
-}),,
+});
 
 app.listen(config.port, () => {
     console.log(`Server started on port ${config.port}`);

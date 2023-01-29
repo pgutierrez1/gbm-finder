@@ -8,6 +8,8 @@ const sequelize = new Sequelize("database", "user", "password", {
 });
 
 const Posts = require("./models/post")(sequelize, Sequelize.DataTypes);
+const RecentPost = require("./models/post")(sequelize, Sequelize.DataTypes);
+
 
 const force = process.argv.includes("--force") || process.argv.includes("-f");
 
@@ -15,9 +17,21 @@ sequelize
   .sync({ force })
   .then(async () => {
     const posts = [
+        RecentPost.upsert({
+            title: "Post about a cool event",
+            datetime: "2023-01-29T02:51",
+            org: "By an organziation",
+            desc: "It is full of information",
+            location: "And it has a location",
+            interest: 200
+        }),
         Posts.upsert({
-            title: "this is post one",
-            desc: "it is very unique"
+            title: "Very epic GBM for a UF club",
+            datetime: "2023-01-29T02:51",
+            org: "Microsoft and Google (what)",
+            desc: "$$$$$$$$$$$$$$$",
+            location: "CSE A101",
+            interest: 50000
         }),
     ];
     await Promise.all(posts);
