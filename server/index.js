@@ -39,6 +39,11 @@ app.get("/api/getposts", async (req, res) => {
 
 app.post("/api/createpost", (req, res) => {
     console.log(req.body);
+    Post.create({
+        title: req.body.title,
+        desc: req.body.desc,
+        date: req.body.date,
+    });
 })
 
 app.listen(config.port, () => {
