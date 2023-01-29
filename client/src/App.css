@@ -1,9 +1,26 @@
 p {
     font-family: Inter;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+.primary {
+    color: lightblue; 
+}
+.font-xl {
+    font-size: 70px;
+}
+html {
+    font-size: 20px;
 }
 .App {
     display: flex;
     flex-direction: row;
+    text-align: left;
+}
+.App-logo {
+    pointer-events: none;
+    height: 35vmin;
 }
 .mainView {
     width: 80%;
