@@ -5,7 +5,7 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
             <div className="sidebar-header">Gator Space</div>
-            <div className="button">Create event</div>
+            <div className="button"><a href="/new">Create event</a></div>
         </div>
     )
 }

@@ -9,6 +9,9 @@ module.exports = (sequelize, DataTypes) => {
         desc: {
             type: DataTypes.TEXT,
         },
+        date: {
+            type: DataTypes.TEXT,
+        },
         org: {
             type: DataTypes.STRING,
         },

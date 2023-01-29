@@ -1,0 +1,32 @@
+label {
+    color: white;
+    margin: 12vh 0;
+}
+.form-body {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+    padding: 2vw;
+
+    width: 60%;
+    height: 80%;
+
+    background: grey;
+}
+.form-title {
+    align-text: center;
+    color: white;
+}
+.form-button{
+    margin: 1vh 4vw;
+    padding: 1vw;
+
+    background: white;
+    color: black;
+    border-radius: 5px;
+    
+    font-family: Inter;
+    font-weight: 700;
+    text-align: center;
+}

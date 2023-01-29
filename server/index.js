@@ -37,6 +37,10 @@ app.get("/api/getposts", async (req, res) => {
 
 });
 
+app.post("/api/createpost", (req, res) => {
+    console.log(req.body);
+})
+
 app.listen(config.port, () => {
     console.log(`Server started on port ${config.port}`);
     connectToDb();

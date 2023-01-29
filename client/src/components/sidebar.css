@@ -1,3 +1,17 @@
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+a:hover{
+    cursor: pointer;
+}
 .sidebar {
     width: 20%;
     height: auto;
@@ -15,7 +29,7 @@
 
 .button {
     margin: 1vh 4vw;
-    padding: 2vh;
+    padding: 1vw;
 
     background: grey;
     color: white;

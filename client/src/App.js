@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Axios from "axios";
-// components
-import PostRow from './components/postRow';
-import Sidebar from './components/sidebar';
+
+// pages
+import Home from './pages/home';
+import NewPost from './pages/newpost';
 import './App.css';
 
 function App() {
@@ -14,26 +16,23 @@ function App() {
             setPosts(res.data);
             console.log(res.data);
           });
-    });
+    },[]);
 
     const rows = [
         { name: "Today" },
         { name: "This week" },
     ]
-    // const posts = [
-    //     { title: "First post", desc: "this is the first post"},
-    //     { title: "2 post", desc: "second post"},
-    //     { title: "3 post", desc: "third post lol"},
-    //     { title: "4 post", desc: "loloolloloollolllol"},
-    // ]
+
   return (
-    <div className="App">
-        <div className="mainView">
-            <PostRow rowdata={rows[0]} postdata={posts} />
-            <PostRow rowdata={rows[1]} postdata={posts} />
-        </div>
-        <Sidebar />
-    </div>
+    <BrowserRouter>
+        <Routes>
+            <Route 
+                index path="/" 
+                element={<Home rows={rows} posts={posts}/>} 
+            />
+            <Route path="/new" element={<NewPost />}/>
+        </Routes>
+    </BrowserRouter>
   );
 }
 
