@@ -1,4 +1,4 @@
-# GBM Finder
+# Gator Space
 ## Developer instructions
 
 [Make sure you have the latest version of Node.js installed](https://nodejs.org/)
