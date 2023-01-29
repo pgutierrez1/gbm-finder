@@ -1,9 +1,20 @@
 p {
     font-family: Inter;
 }
+.primary {
+    color: lightblue; 
+}
+.font-xl {
+    font-size: 70px;
+}
 .App {
     display: flex;
     flex-direction: row;
+    text-align: left;
+}
+.App-logo {
+    pointer-events: none;
+    height: 35vmin;
 }
 .mainView {
     width: 80%;
